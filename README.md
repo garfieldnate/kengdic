@@ -11,7 +11,7 @@ kengdic is a large Korean/English dictionary database created by Joe Speigle. It
 
 TODOs for each file:
 
-`kengdic.sql`:
+* `kengdic.sql`:
 
     * add extra statements necessary for the file to be importable without any editing or specially prepared database
     * fix entries where the entries are HTML containing both hangeul and hanja in text body

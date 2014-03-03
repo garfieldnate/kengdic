@@ -10,6 +10,9 @@ kengdic is a large Korean/English dictionary database created by Joe Speigle. It
 
 * `kengdic_2011.sql` is a database dump of the same Korean/English dictionary, but instead of being a SQL file it is simply a tab-separated file containing all of the data. It contains 134,223 rows. As this is probably cleaner, newer, better data than `kengdic.sql`, it may not be worth cleaning up that file at all.
 
+* `ezcorean_6000.sql` is a database dump of 6000 common Korean words, along
+with the definitions and hanja.
+
 TODOs for each file:
 
 * `kengdic.sql`:

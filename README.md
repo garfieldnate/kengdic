@@ -9,6 +9,11 @@ kengdic is a large Korean/English dictionary database created by Joe Speigle. It
     * source of the entry
 
 * `kengdic_2011.sql` is a database dump of the same Korean/English dictionary, but instead of being a SQL file it is simply a tab-separated file containing all of the data. It contains 134,223 rows. As this is probably cleaner, newer, better data than `kengdic.sql`, it may not be worth cleaning up that file at all.
+    * To build postgres database from file:
+        * Make sure postgres is running in the background on your machine and create database: Run "psql" in terminal, once at the postgres command prompt type "CREATE DATABASE kengdic;". Quit with Ctrl-D.
+        * Edit the create_table.sql file. Change "/FULL/PATH/TO/FILE/kengdic_2011_cleaned.tsv" to the full path on your machine. Note using '~/' or './' doesn't work, no relative paths.
+        * Create table and populate with data: Run "psql kengdic < create_table.sql" in terminal (not inside postgres)
+        * Now you should have a table called korean_english inside of the database kengdic. Access it by running "psql kengdic" and then use SQL to query the database (eg "SELECT COUNT(*) FROM korean_english;")
 
 * `ezcorean_6000.sql` is a database dump of 6000 common Korean words, along
 with the definitions and hanja.
@@ -26,8 +31,9 @@ TODOs for each file:
     * add primary key (I'm pretty sure that would be good; there are already indices, though)
     * export to sqlite
 
-`kengdic_2011.sql`:
+* `kengdic_2011.sql`:
 
-    * figure out how to load it into a database and use it instead of `kengdic.sql`, since it's newer.
+    * Do something about entries with no definition
+    * Look for other issues with the database
 
 Information may be incomplete, as I am still exploring and documenting the contents of this repository. Any contributions to information about this content would be much appreciated.

@@ -1,3 +1,6 @@
+CREATE DATABASE kengdic;
+\connect kengdic;
+
 CREATE TABLE korean_english (
 		id SERIAL PRIMARY KEY,
     wordid integer,
@@ -15,4 +18,4 @@ CREATE TABLE korean_english (
 );
 
 
-COPY korean_english(wordid, word, syn, def, posn, pos, submitter, doe, wordsize, hanja, wordid2, extradata) FROM '/FULL/PATH/TO/FILE/kengdic_2011_cleaned.tsv' NULL 'NULL';
+\COPY korean_english(wordid, word, syn, def, posn, pos, submitter, doe, wordsize, hanja, wordid2, extradata) FROM 'kengdic_2011_cleaned.tsv' NULL 'NULL';

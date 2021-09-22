@@ -1,0 +1,83 @@
+{
+    "description": "Korean-English dictionary",
+    "keywords": [
+        "Korean",
+        "English",
+        "dictionary",
+        "lexicography",
+        "ezcorean"
+    ],
+    "last_updated": "2021-09-20",
+    "licenses": [
+        {
+            "name": "CC-BY-SA-3.0",
+            "path": "https://creativecommons.org/licenses/by-sa/3.0/legalcode",
+            "title": "Creative Commons Attribution-ShareAlike 3.0 Unported"
+        },
+        {
+            "name": "LGPL-2.0",
+            "path": "https://www.gnu.org/licenses/old-licenses/lgpl-2.0.en.html",
+            "title": "GNU Library General Public License, version 2.0"
+        }
+    ],
+    "name": "kengdic",
+    "resources": [
+        {
+            "name": "kengdic",
+            "path": "kengdic.tsv",
+            "dialect": {
+                "delimiter": "\t"
+            },
+            "schema": {
+                "primaryKey": "id",
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "integer",
+                        "required": true
+                    },
+                    {
+                        "name": "surface",
+                        "description": "word/phrase/morpheme in Korean",
+                        "type": "string"
+                    },
+                    {
+                        "name": "hanja",
+                        "description": "Korean spelling using hanja",
+                        "type": "string"
+                    },
+                    {
+                        "name": "gloss",
+                        "description": "English definition",
+                        "type": "string"
+                    },
+                    {
+                        "name": "level",
+                        "type": "string",
+                        "pattern": "^[ABCD]?$"
+                    },
+                    {
+                        "name": "created",
+                        "type": "datetime",
+                        "required": true
+                    },
+                    {
+                        "name": "source",
+                        "type": "string",
+                        "description": "For the entries from the original ezcorean database, the format is username-topicid@ezcorean:wordid",
+                        "required": true
+                    }
+                ]
+            }
+        }
+    ],
+    "sources": [
+        {
+            "name": "ezcorean",
+            "path": "https://ezcorean.com",
+            "title": "ezcorean website (no longer available)"
+        }
+    ],
+    "title": "Kengdic",
+    "version": "2021.9.20"
+}

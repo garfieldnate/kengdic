@@ -21,6 +21,22 @@ This data still needs a lot of work, and contributions are very welcome. Some wa
 
 By contributing data, you release it under the same license terms as Kengdic itself (see below).
 
+## Example Data Package Usage
+
+We've provided a `datapackage.json` for convenience. To retrieve and load the data in python:
+
+* `pip install datapackage`
+
+```python
+    $ python
+    >>> from datapackage import Package
+    >>> package = Package('https://raw.githubusercontent.com/garfieldnate/kengdic/master/datapackage.json')
+    >>> resource = package.get_resource('kengdic')
+    >>> data = resource.read(keyed=True)
+    >>> data[20977]
+    {'id': 20978, 'surface': '급조', 'hanja': '急造', 'gloss': None, 'level': None, 'created': datetime.datetime(2009, 1, 1, 20, 23, 14), 'source': 'mr.hanja-213889@ezcorean:213889'}
+```
+
 ## License
 
 The Kengdic data is released under dual licenses: users may choose to use [MPL 2.0](http://www.mozilla.org/MPL/2.0/) or the [LGPL](https://www.gnu.org/licenses/old-licenses/lgpl-2.0.en.html), version 2.0 or later.

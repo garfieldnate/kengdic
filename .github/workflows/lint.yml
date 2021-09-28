@@ -1,0 +1,32 @@
+name: Lint Data
+
+# Run our lints and upload a report of the emitted warnings to GH pages
+# TODO: would be better to make these reports available before merging to master!
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.9
+      - name: Install pipenv
+        run: pip install pipenv
+      - name: Run lints
+        run: |
+          pipenv install --dev
+          pipenv run python scripts/lint.py
+
+      - name: Upload results to GH Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./reports
+

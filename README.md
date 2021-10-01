@@ -1,27 +1,25 @@
 # Kengdic
 
-Kengdic is a large, open Korean/English dictionary database created by Joe Speigle. It was originally hosted by Joe at ezkorean.com.
+Kengdic is a large, open Korean/English dictionary database created by Joe Speigle. It was originally hosted by Joe at ezcorean.com.
 
-The bulk of the usable data is in `kengdic_2011.tsv`. The `raw` directory contains data which still needs to be examined. The `reports` directory contains information on issues discovered with the data (there are lots!).
-
-Information may be incomplete, as we are still exploring and documenting the contents of this repository. Any contributions to information about this content would be much appreciated.
+The bulk of the usable data is in `kengdic_2011.tsv`. The `raw` directory contains data which still needs to be examined. The `scripts` directory contains some automated QA checks for the data; these are run whenever a change is made in this repository.
 
 ## Contributors
 
-kengdic.tsv indicates sources by crediting Joe Spiegle, members of http://ezcorean.com nickname, and the author of engdic.
+The dictionary data is still quite dirty, and contributions are very welcome. Some ways you can help:
 
-This data still needs a lot of work, and contributions are very welcome. Some ways you can help:
+* Fix some of the issues which have been automatically flagged. The list of these issues is available on the repository website: http://garfieldnate.github.io/kengdic/.
 
-* Add English glosses or hanja to entries that are missing them
 * Check existing entries for correctness (흰색 means white, not gray, "the m prophets", lowercase "british", etc.)
 * Add new entries
 * Assess the current coverage. Are we missing any particularly basic words, or words related to any specific subject?
 * Fix grammatical, spelling or formatting issues
 * Help come up with editorial and style guidelines.
+* Come up with new automatic checks we can run on the dictionary to find possible issues (see `scripts/lint.py`).
 
 By contributing data, you release it under the same license terms as Kengdic itself (see below).
 
-## Example Data Package Usage
+## Example Datapackage Usage
 
 We've provided a `datapackage.json` for convenience. To retrieve and load the data in python:
 

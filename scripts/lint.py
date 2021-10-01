@@ -134,6 +134,7 @@ if __name__ == "__main__":
     run_all_lints()
 
 # TODO
+# don't capitalize glosses that aren't proper nouns
 # check spaces: leading, trailing, doubled
 # suggest sub-entries
 # get rid of current report directory

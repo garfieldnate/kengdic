@@ -60,8 +60,12 @@ def find_mismatching_hanja_lengths(out):
     mismatched_entries = []
     for entry in DATA:
         if entry['hanja']:
+            expected_length = len(entry['surface'])
+            if '10' in entry['surface']:
+                # hanja will be only one character, "十"
+                expected_length -= 1
             for hanja in entry['hanja'].split(','):
-                if len(hanja) != len(entry['surface']):
+                if len(hanja) != expected_length:
                     mismatched_entries.append(entry)
 
     out.write(f"{len(mismatched_entries)} entries where the hanja and surface are different lengths\n")

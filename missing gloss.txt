@@ -1,4 +1,4 @@
-16259 entries missing gloss values
+16255 entries missing gloss values
   5212 (surface: 가가)
   5220 (surface: 가거주)
   5221 (surface: 가건물)
@@ -3844,7 +3844,6 @@
   40305 (surface: 말세)
   40355 (surface: 말엽)
   40424 (surface: 말일)
-  40432 (surface: 말조심)
   40433 (surface: 말종)
   40473 (surface: 말학부수)
   40538 (surface: 망가적)
@@ -4138,7 +4137,6 @@
   43328 (surface: 몰역사적)
   43343 (surface: 몰지각)
   43353 (surface: 몰풍)
-  43436 (surface: 몸조심)
   43620 (surface: 몽)
   43621 (surface: 몽)
   43646 (surface: 몽매)
@@ -7577,7 +7575,6 @@
   67265 (surface: 손보사)
   67267 (surface: 손비)
   67278 (surface: 손상익하)
-  67284 (surface: 손세탁)
   67304 (surface: 손실량)
   67305 (surface: 손실액)
   67384 (surface: 손자삼요)
@@ -14886,7 +14883,6 @@
   122939 (surface: 편수국)
   122940 (surface: 편수직)
   122941 (surface: 편수직원)
-  122951 (surface: 편쌈)
   122963 (surface: 편액)
   122964 (surface: 편역서)
   122970 (surface: 편의율)

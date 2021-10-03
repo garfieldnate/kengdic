@@ -1,4 +1,4 @@
-16262 entries missing gloss values
+16259 entries missing gloss values
   5212 (surface: 가가)
   5220 (surface: 가거주)
   5221 (surface: 가건물)
@@ -5908,7 +5908,6 @@
   56215 (surface: 불임증)
   56218 (surface: 불입)
   56221 (surface: 불입액)
-  56227 (surface: 불조심)
   56229 (surface: 불지)
   56235 (surface: 불참여)
   56236 (surface: 불참자)
@@ -7962,7 +7961,6 @@
   70582 (surface: 승가)
   70583 (surface: 승감)
   70589 (surface: 승강대)
-  70591 (surface: 승강이)
   70602 (surface: 승계권)
   70603 (surface: 승계설)
   70604 (surface: 승고월하문)
@@ -10020,7 +10018,6 @@
   87113 (surface: 운행제)
   87116 (surface: 운휴)
   87181 (surface: 울화병)
-  87186 (surface: 움막)
   87269 (surface: 웅건)
   87280 (surface: 웅변적)
   87299 (surface: 웅호지사)

@@ -1,4 +1,4 @@
-16267 entries missing gloss values
+16262 entries missing gloss values
   5212 (surface: 가가)
   5220 (surface: 가거주)
   5221 (surface: 가건물)
@@ -10815,8 +10815,6 @@
   92385 (surface: 이임식)
   92391 (surface: 이자세)
   92392 (surface: 이자율)
-  92396 (surface: 이장)
-  92397 (surface: 이장)
   92401 (surface: 이재국)
   92407 (surface: 이적)
   92408 (surface: 이적)
@@ -14506,7 +14504,6 @@
   119182 (surface: 탕약)
   119183 (surface: 탕자)
   119189 (surface: 탕탕)
-  119197 (surface: 태고)
   119200 (surface: 태곳)
   119205 (surface: 태권도인)
   119206 (surface: 태권도장)
@@ -15337,7 +15334,6 @@
   126732 (surface: 한림원)
   126734 (surface: 한말)
   126740 (surface: 한문식)
-  126750 (surface: 한발한우충동)
   126756 (surface: 한방적)
   126757 (surface: 한방차)
   126765 (surface: 한사)
@@ -15798,7 +15794,6 @@
   129901 (surface: 호연)
   129902 (surface: 호연)
   129907 (surface: 호열자)
-  129925 (surface: 호응도)
   129935 (surface: 호재성)
   129953 (surface: 호접몽)
   129961 (surface: 호조황)

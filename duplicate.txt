@@ -1,4 +1,4 @@
-375 duplicate surface/gloss pairs
+374 duplicate surface/gloss pairs
   '주인/host': 42,3194
   '개인 천막/shelter tent': 189,8561
   '건반/keyboard': 220,9510
@@ -269,7 +269,6 @@
   '의기소침/mental collapse into depression, the doldrums, lowness': 90895,90896
   '의대/None': 90911,90912
   '의정/None': 91257,91258
-  '이장/None': 92396,92397
   '이적/None': 92407,92408
   '이진/None': 92537,92538
   '일경/None': 93813,93814

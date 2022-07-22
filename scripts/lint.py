@@ -154,5 +154,6 @@ if __name__ == "__main__":
 # suggest sub-entries; 밤색 vs. 밤색 털의, 한잔 and 한잔 내다. Maybe using noun and noun-verb
 # count number of long hanja strings with a sandwiched hangeul (possibly missing hanja)
 # many runs of hanja suggest using them in later entries. 초조, 외분, etc.
+# similarly, hangeul entries with sufficient overlap with hanja entries may suggest missing hanja
 # sth, sw, so, sb., etc: replace or use consistently
 # spelling errors in gloss
